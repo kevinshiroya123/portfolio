@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.eb566477.css",
+    "main.js": "/portfolio/static/js/main.7532c489.js",
+    "static/js/488.eb0b5c9d.chunk.js": "/portfolio/static/js/488.eb0b5c9d.chunk.js",
+    "static/media/illustrator.svg": "/portfolio/static/media/illustrator.5c6b6795286fb4a440a0aa1cc52108fe.svg",
+    "static/media/day-home-background.png": "/portfolio/static/media/day-home-background.98e656dfdbe4fae4755e.png",
+    "static/media/night-home-background.png": "/portfolio/static/media/night-home-background.2d4adfcd4553355004a8.png",
+    "index.html": "/portfolio/index.html",
+    "main.eb566477.css.map": "/portfolio/static/css/main.eb566477.css.map",
+    "main.7532c489.js.map": "/portfolio/static/js/main.7532c489.js.map",
+    "488.eb0b5c9d.chunk.js.map": "/portfolio/static/js/488.eb0b5c9d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eb566477.css",
+    "static/js/main.7532c489.js"
+  ]
+}
