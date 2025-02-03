@@ -69,7 +69,7 @@ const Home = ({ isDarkMode }) => {
     >
       <div className="home-content">
         <h1>Hi, I am <span className="highlight">Kevin</span></h1>
-        
+
         {/* Typing Effect */}
         <h2 className="role">
           {typedText}
@@ -82,18 +82,26 @@ const Home = ({ isDarkMode }) => {
 
         {/* Social Icons */}
         <div className="social-icons">
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://instagram.com/kevin_shiroya__" target="_blank" rel="noopener noreferrer">
             <img src={instagramIcon} alt="Instagram" className="social-icon-img" />
           </a>
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/kevinshiroya123" target="_blank" rel="noopener noreferrer">
             <img src={githubIcon} alt="GitHub" className="social-icon-img" />
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/kevin-shiroya-018539268/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BHuMZIYDwR72Yd%2FnqAuHuvw%3D%3D"
+            target="_blank" rel="noopener noreferrer">
             <img src={linkedinIcon} alt="LinkedIn" className="social-icon-img" />
           </a>
         </div>
 
-        <button className="resume-btn">Resume</button>
+
+        <button
+          className="resume-btn"
+          onClick={() => window.open(require("../images/Resume.pdf"), "_blank")}
+        >
+          Resume
+        </button>
+
       </div>
 
       {/* Right Image - Developer SVG with Scroll Animation */}

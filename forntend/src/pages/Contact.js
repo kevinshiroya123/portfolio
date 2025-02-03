@@ -38,8 +38,8 @@ const Contact = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-   // Handle Form Submission (Sends Data to Custom Backend API)
-   const handleSubmit = async (e) => {
+  // Handle Form Submission (Sends Data to Custom Backend API)
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
 
@@ -117,17 +117,19 @@ const Contact = () => {
           <div className="social-container">
             <h3>Social</h3>
             <div className="social-container-social-icons">
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://instagram.com/kevin_shiroya__" target="_blank" rel="noopener noreferrer">
                 <img src={instagramIcon} alt="Instagram" className="social-icon-img" />
               </a>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/kevinshiroya123" target="_blank" rel="noopener noreferrer">
                 <img src={githubIcon} alt="GitHub" className="social-icon-img" />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/kevin-shiroya-018539268/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BHuMZIYDwR72Yd%2FnqAuHuvw%3D%3D"
+                target="_blank" rel="noopener noreferrer">
                 <img src={linkedinIcon} alt="LinkedIn" className="social-icon-img" />
               </a>
             </div>
           </div>
+
         </div>
       </div>
     </section>
