@@ -27,6 +27,12 @@ const projects = [
     github: "https://github.com/kevinshiroya123/facebook-clone",
     liveDemo: "https://kevinshiroya123.github.io/facebook-clone/",
   },
+  {
+    title: "Movie Recommendation System",
+    description: "A machine learning-based movie recommendation system using Python.",
+    github: "https://github.com/kevinshiroya123/Movie-Recommendation-system",
+    liveDemo: "#", // No live demo link
+  },
 ];
 
 const Projects = () => {
@@ -77,9 +83,11 @@ const Projects = () => {
                 <a href={project.github} target="_blank" rel="noopener noreferrer" className="github-btn">
                   <FaGithub className="github-icon" /> GitHub
                 </a>
-                <a href={project.liveDemo} target="_blank" rel="noopener noreferrer" className="live-demo-btn">
-                  Live Demo
-                </a>
+                {project.liveDemo !== "#" && (
+                  <a href={project.liveDemo} target="_blank" rel="noopener noreferrer" className="live-demo-btn">
+                    Live Demo
+                  </a>
+                )}
               </div>
             </div>
           </div>

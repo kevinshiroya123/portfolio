@@ -6,10 +6,10 @@
   flex-direction: column;
   justify-content: center;
   display: flex;
-  
   color: black;
 }
-.dark-mode .projects-section{
+
+.dark-mode .projects-section {
   background-color: #121212;
   color: white;
 }
@@ -59,7 +59,7 @@
   transform: scale(0.8);
 }
 
-/* Fade-in Animation - Every Time it Scrolls into View */
+/* Fade-in Animation */
 .project-card.fade-in {
   opacity: 1;
   transform: scale(1);
@@ -76,7 +76,7 @@
 .project-info {
   text-align: center;
   width: 100%;
-    max-width: 300px;
+  max-width: 300px;
 }
 
 /* Project Title */
@@ -97,24 +97,28 @@
 .project-links {
   display: flex;
   justify-content: space-between;
+  gap: 10px;
   margin-top: 10px;
 }
 
-/* GitHub & Live Demo Buttons */
+/* Equal width buttons using flex */
 .github-btn, .live-demo-btn {
   text-decoration: none;
   font-size: 0.9rem;
-  padding: 5px 10px;
+  padding: 8px 10px;
   border-radius: 5px;
   font-weight: bold;
   transition: background-color 0.5s, transform 0.2s ease-in-out;
+  flex-grow: 1; /* Make both buttons take equal width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+/* GitHub Button */
 .github-btn {
   background-color: #333;
   color: white;
-  display: flex;
-  align-items: center;
   gap: 5px;
 }
 
@@ -127,6 +131,7 @@
   font-size: 1rem;
 }
 
+/* Live Demo Button */
 .live-demo-btn {
   background-color: #007bff;
   color: white;
@@ -136,22 +141,6 @@
   background-color: #0056b3;
   transform: scale(1.05);
 }
-
-/* Bounce Animation */
-/* @keyframes bounceIn {
-  0% {
-    transform: scale(0.8);
-    opacity: 0;
-  }
-  50% {
-    transform: scale(1.1);
-    opacity: 0.5;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-} */
 
 /* Fade-in Animation */
 @keyframes fadeInUp {
@@ -174,5 +163,10 @@
 
   .project-card {
     width: 90%;
+  }
+
+  .project-links {
+    flex-direction: column;
+    gap: 5px;
   }
 }
