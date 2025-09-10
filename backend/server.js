@@ -12,9 +12,14 @@ admin.initializeApp({
 
 const db = admin.firestore(); // Firestore Database
 
+
 const app = express();
 app.use(express.json());
-app.use(cors()); // Allow frontend to access API
+
+app.use(cors()); // ✅ Allow all origins
+app.options("*", cors()); // ✅ Preflight support for all
+
+
 
 // Configure Nodemailer
 const transporter = nodemailer.createTransport({
