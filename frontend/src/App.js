@@ -4,20 +4,19 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
-import "./App.css"; // Add styling for smooth scrolling
+import Certificates from "./pages/Certificates"; // <-- add this
+import "./App.css";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(
     localStorage.getItem("darkMode") === "true"
   );
 
-  // Update dark mode in localStorage
   useEffect(() => {
     document.body.classList.toggle("dark-mode", isDarkMode);
     localStorage.setItem("darkMode", isDarkMode);
   }, [isDarkMode]);
 
-  // Toggle dark mode function
   const toggleTheme = () => {
     setIsDarkMode((prev) => !prev);
   };
@@ -34,6 +33,9 @@ function App() {
         </section>
         <section id="projects">
           <Projects />
+        </section>
+        <section id="certificates">   {/* New Section */}
+          <Certificates />
         </section>
         <section id="contact" className="contact">
           <Contact />

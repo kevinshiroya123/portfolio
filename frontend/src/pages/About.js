@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import "./About.css"; // Import styles
 
 const technologies = [
-  { className: "devicon-c-plain", name: "C Language" },
+
   { className: "devicon-typescript-plain", name: "TypeScript" },
   { className: "devicon-express-original", name: "Express" },
   { className: "devicon-nodejs-plain", name: "NodeJS" },
