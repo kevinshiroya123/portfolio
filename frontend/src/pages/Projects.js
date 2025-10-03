@@ -19,7 +19,7 @@ const projects = [
     title: "Wildfire Tracker",
     description: "A real-time wildfire tracker using NASA API.",
     github: "https://github.com/your-github/wildfire-tracker",
-    liveDemo: "https://kevinshiroya123.github.io/wildfire-tracker/",
+    liveDemo: "https://d305ogl9zreeq8.cloudfront.net/",
   },
   {
     title: "Facebook Clone",
@@ -98,3 +98,4 @@ const Projects = () => {
 };
 
 export default Projects;
+
