@@ -68,7 +68,7 @@ const Navbar = ({ isDarkMode, toggleTheme }) => {
         </div>
 
         <ul className={`navbar-links ${menuOpen ? "open" : ""}`}>
-          {["home", "about", "projects", "contact"].map((id) => (
+          {["home", "about", "projects", "certificates", "contact"].map((id) => (   // ✅ added certificates here
             <li key={id}>
               <a
                 href={`#${id}`}

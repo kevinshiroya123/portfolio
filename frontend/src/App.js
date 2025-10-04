@@ -34,9 +34,9 @@ function App() {
         <section id="projects">
           <Projects />
         </section>
-       {/* <section id="certificates">   
+        {/* <section id="certificates">   
           <Certificates />
-        </section> */}
+        </section>  */}
         <section id="contact" className="contact">
           <Contact />
         </section>
